@@ -1,0 +1,48 @@
+.read_all {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;    
+    text-transform: uppercase;
+    color: #303030;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.dsp_flx {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.articles {
+    margin-bottom: 80px;
+
+    &_list {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_element {
+        width: 24%;       
+    }
+
+    &_date {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        color: #8F8F8F;
+        margin: 12px 0;
+    }
+
+    &_title {
+        width: 91%;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        color: #303030;
+    }
+}

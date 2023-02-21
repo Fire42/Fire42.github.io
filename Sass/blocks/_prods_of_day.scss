@@ -1,0 +1,376 @@
+.prods-of-day {
+    margin-bottom: 120px;
+
+    &_card {
+        margin-top: 40px;
+    }
+}
+
+.prods-of-day_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_pic {
+    position: relative;
+    width: 42.31%;
+
+    .first {
+        top: 16px;
+        left: 16px;
+    }
+
+    .second {
+        top: 16px;
+        left: 70px;
+    }
+    
+    .third {
+        top: 16px;
+        left: 124px;
+    }
+}
+
+.new {
+    background-color: #495159;
+    
+}
+
+.hit {
+    background-color: #E1A661; 
+}
+
+.pic_nav {
+    .selected{
+        opacity: .5;
+    }
+
+    .back_img {
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+
+.pic_nav_back, .pic_nav_forward {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.pic_nav_back {
+    position: absolute;
+    top: 267px;
+    left: 16px;
+}
+
+.pic_nav_forward {
+    position: absolute;
+    top: 267px;
+    right: 16px;
+}
+
+.card_description {
+    width: 52%;
+}
+
+.description_rating {
+    display: flex;
+    justify-content: space-evenly;
+    height: 17px;
+    width: 20%;
+    cursor: pointer;
+
+    .colored {
+        background: url("../images/product-of-day/Star1.svg") no-repeat;
+    } 
+}
+
+.rating_star {
+    width: 1em;
+    height: 1em;
+    background: url("../images/product-of-day/Star0.svg") no-repeat;
+
+    &:hover {
+        background: url("../images/product-of-day/Star1.svg") no-repeat;
+    }
+}
+
+.rating_num {
+    font-family: Inter;
+    font-size: 14px;
+    text-align: right;
+    width: 2em;
+}
+
+.card_name {
+    font-family: Prata;
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.code {
+    font-family: Inter;
+    font-size: 14px;
+    color: #8F8F8F;
+}
+
+.offer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+
+    .price {
+        width: 32%;
+    }
+
+    &_timer {
+        width: 224px;
+        height: 64px;
+        background: url("../images/product-of-day/timer.png") no-repeat;
+    }
+}
+
+.card_line {
+    width: 100;
+    height: 0;
+    border: 1px solid #f0f0f0;
+    margin: 20px 0 30px;
+}
+
+.card_color {
+    margin-bottom: 36px;
+}
+
+.card_word {
+    margin-bottom: 16px;
+    padding-top: 3px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.palette {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin-bottom: 16px;
+
+    &_color {
+        width: 2em;
+        height: 2em;
+        border: 1px solid #DADADA;
+        border-radius: 50%;
+
+        &:hover {
+            border-color: #303030;
+        }
+    }
+
+    .grey {
+        background-image: url("../images/product-of-day/grey.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .pale {
+        background-image: url("../images/product-of-day/pale.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .orange {
+        background-image: url("../images/product-of-day/orange.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .lime {
+        background-image: url("../images/product-of-day/lime.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+
+
+
+.card_size_title {
+    display: flex;
+    justify-content: space-between;
+    width: 11%;
+    margin-bottom: 17px;
+}
+
+.size_info {
+    position: relative;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    padding-top: 3px;
+    background-color: #f0f0f0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+
+    .card_notice {
+        display: none;
+        position: absolute;
+        box-sizing: border-box;
+        width: 293px;
+        height: 170px;
+        top: -167px;
+        left: -146px;
+        background: url("../images/product-of-day/notice.svg");
+        padding: 36px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+    
+    }
+
+    &:hover {
+        background-color: #d3d3d3;
+
+        .card_notice {
+            display: block;
+        }
+    }
+}
+
+.size_list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+
+    .selected {
+        border-color: #303030;
+        background-color: #303030;
+        color: #FFF;
+    }
+}
+
+.size_item {
+    box-sizing: border-box;
+    width: 50px;
+    height: 32px;
+    background-color: #FFF;
+    border: 1px solid #DADADA;
+    font-family: Inter;
+
+    &:hover {
+        border-color: #303030;
+        background-color: #FFF;
+        color: #303030;
+    }
+
+    &:active {
+        border-color: #303030;
+        background-color: #303030;
+        color: #FFF;
+    }
+
+    &:nth-last-child(1), &:nth-last-child(2) {
+        opacity: .3;
+    }
+}
+
+.user-active {
+    display: flex;
+    justify-content: space-between;
+    width: 83.5%;
+}
+
+.user_buttons {
+    button {
+        display: block;
+        width: 400px;
+        height: 56px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:nth-child(1) {
+            margin-bottom: 10px;
+        }
+    }
+
+    
+}
+
+.in-basket {
+    background-color: #303030;
+    color: #FFF;
+
+    &:hover {
+        background-color: #505050;
+        ;
+    }
+
+    &:active {
+        background-color: #000;
+    }
+}
+
+.one-click {
+    background-color: #FFF;
+    color: #303030;
+
+    &:hover {
+        background: #303030;
+        color: #FFF;
+    }
+
+    &:active {
+        background-color: #000;
+        color: #FFF;
+    }
+}
+
+.user_command {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+
+    div {
+        padding-top: 10px;
+        padding-bottom: 17px;
+        background-position: 0 7px;
+    }
+
+
+    .command_save {
+        padding-left: 30px;
+        background-image: url("../images/product-of-day/save.svg");
+        background-repeat: no-repeat;
+
+        &:hover {
+            background-image: url("../images/product-of-day/save_h.svg");
+            color: #979797;
+
+        }
+
+        &:active {
+            background-image: url("../images/product-of-day/save_p.svg");
+        }
+    }
+
+    .command_compare {
+        padding-left: 30px;
+        background-image: url("../images/product-of-day/compare.svg");
+        background-repeat: no-repeat;
+    }
+
+    .command_share {
+        padding-left: 30px;
+        background-image: url("../images/product-of-day/share.svg");
+        background-repeat: no-repeat;
+    }
+}
